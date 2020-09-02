@@ -91,7 +91,9 @@ C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.Gener
 C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.exe
 C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
-C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.exe
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.pdb
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
@@ -108,6 +110,4 @@ C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.cspro
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.exe
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
-C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
-C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.exe
-C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.pdb
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csprojAssemblyReference.cache
