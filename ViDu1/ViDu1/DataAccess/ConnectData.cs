@@ -38,6 +38,7 @@ namespace ViDu1.DataAccess
         //Tao contructor goi ket noi khi new lop ConnectData
         public ConnectData()
         {
+            Console.WriteLine("LOL: Constructor");
             Connect();
         }
 
@@ -47,6 +48,7 @@ namespace ViDu1.DataAccess
             //Hiện tại, cơ sở dữ liệu nằm trong \\bin\\Debug\\Database\dbTronDe.accdb
             //string strConn = ConfigurationManager.ConnectionStrings["Tron_De_Conn_accdb"].ConnectionString;
             string path = Application.StartupPath;
+            Console.WriteLine("LOL: " + path);
             /*---------------Đường dẫn này sử dụng khi lập trình.  
              * ------------------Khi cài đặt, Application.StartupPath là thư mục cài đặt ứng dụng
              * ------------------Khi lập trình, Application.StartupPath là \\bin\\Debug

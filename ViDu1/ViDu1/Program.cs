@@ -16,7 +16,8 @@ namespace ViDu1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new fMain());
+            //Application.Run(new QuestionForm());
+
             fLogin frm = new fLogin();
             fMain MAIN = new fMain();
             Application.Run(frm);
@@ -25,7 +26,9 @@ namespace ViDu1
                 Application.Run(MAIN);
             }
             else
+            {
                 MAIN.Close();
+            }
         }
     }
 }

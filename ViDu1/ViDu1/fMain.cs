@@ -20,6 +20,7 @@ using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.Threading;
 using System.Configuration;
+using Microsoft.Office.Interop.Word;
 
 namespace ViDu1
 {
@@ -118,6 +119,7 @@ namespace ViDu1
             }
             catch(Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 MessageBox.Show("Kiểm tra kết nối cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -388,21 +390,27 @@ namespace ViDu1
             TreeNode nodeParent = new TreeNode();
             nodeParent.Text = "NGÂN HÀNG CÂU HỎI";
             nodeParent.Name = myRoot;
+
+            Console.WriteLine(Session.strConn);
+
             OleDbConnection conn = new OleDbConnection(Session.strConn);
+
+            Console.WriteLine(conn.ToString());
+
             //conn.Open();
             //
             #region "Nhap có thể xóa"
             string sql1 = "SELECT IDKhoa, TenKhoa FROM tKhoa ";
             OleDbCommand cmd1 = new OleDbCommand(sql1, conn);
             OleDbDataAdapter dataAdapter1 = new OleDbDataAdapter(sql1, conn);
-            DataTable dtKhoa = new DataTable();
+            System.Data.DataTable dtKhoa = new System.Data.DataTable();
             dataAdapter1.Fill(dtKhoa);
             //
             string sql2 = "SELECT m.IDMonHoc, m.IDKhoa, m.MaMonHoc, m.TenMonHoc "
                             + "FROM tMonHoc m ";
             OleDbCommand cmd2 = new OleDbCommand(sql2, conn);
             OleDbDataAdapter dataAdapter2 = new OleDbDataAdapter(sql2, conn);
-            DataTable dtMonHoc = new DataTable();
+            System.Data.DataTable dtMonHoc = new System.Data.DataTable();
             dataAdapter2.Fill(dtMonHoc);
             //
             string sql3 = "SELECT m.ID, m.TenFile, m.IDMonHoc, "
@@ -413,7 +421,7 @@ namespace ViDu1
                            + " GROUP BY m.ID, m.TenFile, m.IDMonHoc, n.MaMonHoc, n.TenMonHoc, n.IDKhoa, k.TenKhoa";
             OleDbCommand cmd3 = new OleDbCommand(sql3, conn);
             OleDbDataAdapter dataAdapter3 = new OleDbDataAdapter(sql3, conn);
-            DataTable dtNhomCauHoi = new DataTable();
+            System.Data.DataTable dtNhomCauHoi = new System.Data.DataTable();
             dataAdapter3.Fill(dtNhomCauHoi);
             //
             foreach (DataRow r1 in dtKhoa.Rows)
@@ -426,7 +434,7 @@ namespace ViDu1
                 string idKhoa = r1["IDKhoa"].ToString();
                 DataView dview2 = new DataView(dtMonHoc);
                 dview2.RowFilter = "IDKhoa ='" + idKhoa + "'";
-                DataTable dtMonHoc2 = dview2.ToTable();
+                System.Data.DataTable dtMonHoc2 = dview2.ToTable();
                 foreach (DataRow r2 in dtMonHoc2.Rows)
                 {
                     TreeNode nodeMonHoc = new TreeNode();
@@ -440,7 +448,7 @@ namespace ViDu1
                     string idMonHoc = r2["IDMonHoc"].ToString();
                     DataView dview3 = new DataView(dtNhomCauHoi);
                     dview3.RowFilter = "IDMonHoc=" + idMonHoc;
-                    DataTable dtNhomCauHoi2 = dview3.ToTable();
+                    System.Data.DataTable dtNhomCauHoi2 = dview3.ToTable();
                     foreach (DataRow r3 in dtNhomCauHoi2.Rows)
                     {
                         TreeNode nodeNhom = new TreeNode();

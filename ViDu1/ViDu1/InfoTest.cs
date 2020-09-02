@@ -13,7 +13,7 @@ namespace ViDu1
         public static string sKyThi = "";
         public static string sMonThi = "";
         public static string sMaHocPhan = "";
-        public static string sViTriLuuDeThi = @"D:\NGÂN HÀNG CÂU HỎI\DE MAU";
+        public static string sViTriLuuDeThi = @"C:\Users\ADMIN\Documents\create-exam-questions\NGÂN HÀNG CÂU HỎI\DE MAU";
         //
         public static string sDoiTuong = "";
         public static string sHinhThucThi = "";
@@ -31,8 +31,8 @@ namespace ViDu1
         public static string sGiaiThich = "";
         public static bool bThemGiaiThich = false;
         public static bool bTieuDeNhom = false;
-        public static string sThuMucGoc = @"D:\NGÂN HÀNG CÂU HỎI";
-        public static string sThuMucDeMau =  @"D:\NGÂN HÀNG CÂU HỎI\DE MAU";
+        public static string sThuMucGoc = @"C:\Users\ADMIN\Documents\create-exam-questions\NGÂN HÀNG CÂU HỎI";
+        public static string sThuMucDeMau =  @"C:\Users\ADMIN\Documents\create-exam-questions\NGÂN HÀNG CÂU HỎI\DE MAU";
         public static int iTepMau = 0;//iTepMau = cbTepMau.SelectedIndex = 0, 1, 2,...
         public static List<string> DanhSachTenDeThi = new List<string>();
         public static int iDeThiDangTao = 0;
