@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F24A06BA-8FEC-45AB-A01E-F1EE2F0CBB0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ViDu1</RootNamespace>
+    <AssemblyName>ViDu1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\NhomCauHoiBlo.cs" />
+    <Compile Include="BusinessObject\MonHocDto.cs" />
+    <Compile Include="BusinessObject\NhomCauHoiDto.cs" />
+    <Compile Include="DataAccess\ConnectData.cs" />
+    <Compile Include="DataAccess\KhoaDao.cs" />
+    <Compile Include="DataAccess\MonHocDao.cs" />
+    <Compile Include="DataAccess\NhomCauHoiDao.cs" />
+    <Compile Include="DataAccess\Session.cs" />
+    <Compile Include="fEditItemListViewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEditItemListViewFile.Designer.cs">
+      <DependentUpon>fEditItemListViewFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fInfoTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInfoTest.Designer.cs">
+      <DependentUpon>fInfoTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProcessTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProcessTest.Designer.cs">
+      <DependentUpon>fProcessTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProgress.Designer.cs">
+      <DependentUpon>fProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThemMonHoc.Designer.cs">
+      <DependentUpon>fThemMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThread.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThread.Designer.cs">
+      <DependentUpon>fThread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fAddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddFile.Designer.cs">
+      <DependentUpon>fAddFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTest.cs" />
+    <Compile Include="Utilities.cs" />
+    <EmbeddedResource Include="fEditItemListViewFile.resx">
+      <DependentUpon>fEditItemListViewFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fInfoTest.resx">
+      <DependentUpon>fInfoTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProcessTest.resx">
+      <DependentUpon>fProcessTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProgress.resx">
+      <DependentUpon>fProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThemMonHoc.resx">
+      <DependentUpon>fThemMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThread.resx">
+      <DependentUpon>fThread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddFile.resx">
+      <DependentUpon>fAddFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add word 512 x 512 - PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add folder word 512 png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add folder word 512 png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add word 512 x 512 - PNG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete word 512 x 512 - PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit word 512- PNG_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder 512 png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-new-7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-txt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-forbidden.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

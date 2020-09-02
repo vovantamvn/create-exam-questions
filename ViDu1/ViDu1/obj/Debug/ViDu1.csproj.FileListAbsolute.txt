@@ -1,0 +1,93 @@
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\bin\Debug\ViDu1.exe
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\bin\Debug\ViDu1.pdb
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fMain.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.Form1.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fProcessTest.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fProgress.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fThemMonHoc.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fThread.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.Properties.Resources.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fAddFile.resources
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.GenerateResource.Cache
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.exe.licenses
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+E:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\bin\Debug\ViDu1.exe
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\bin\Debug\ViDu1.pdb
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fMain.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.Form1.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fProcessTest.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fProgress.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fThemMonHoc.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fThread.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.Properties.Resources.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.fAddFile.resources
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.GenerateResource.Cache
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.exe.licenses
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+D:\3. LAP TRINH\1. TRON DE THI\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+D:\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
+D:\ViDu1\ViDu1\bin\Debug\ViDu1.exe
+D:\ViDu1\ViDu1\bin\Debug\ViDu1.pdb
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fLogin.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fMain.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.Form1.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fProcessTest.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fProgress.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fThemMonHoc.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fThread.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.Properties.Resources.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.fAddFile.resources
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.GenerateResource.Cache
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+D:\ViDu1\ViDu1\obj\Debug\ViDu1.csprojResolveAssemblyReference.cache
+D:\A7. DANH SACH SINH VIEN DO AN TOT NGHIEP 2020\Ngọc Châu\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
+D:\A7. DANH SACH SINH VIEN DO AN TOT NGHIEP 2020\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+D:\A7. DANH SACH SINH VIEN DO AN TOT NGHIEP 2020\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+D:\A7. DANH SACH SINH VIEN DO AN TOT NGHIEP 2020\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.csprojAssemblyReference.cache
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fLogin.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fMain.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.Form1.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fProcessTest.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fProgress.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fThemMonHoc.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fThread.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.Properties.Resources.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.fAddFile.resources
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.GenerateResource.cache
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+C:\Users\User\Downloads\Ngọc Châu\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csprojAssemblyReference.cache
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fLogin.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fMain.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.Form1.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fProcessTest.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fProgress.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fThemMonHoc.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fThread.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.fAddFile.resources
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
