@@ -91,3 +91,23 @@ C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.Gener
 C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.exe
 C:\Users\ADMIN\Downloads\Tốt Nghiệp\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.ResolveComReference.cache
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fEditItemListViewFile.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fInfoTest.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fLogin.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fMain.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.Form1.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fProcessTest.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fProgress.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fThemMonHoc.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fThread.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.Properties.Resources.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.fAddFile.resources
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.exe
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\Debug\ViDu1.pdb
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.exe.config
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.exe
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\bin\Debug\ViDu1.pdb
