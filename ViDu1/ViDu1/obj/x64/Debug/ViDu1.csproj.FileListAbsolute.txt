@@ -18,3 +18,4 @@ C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\x64\Debug\ViDu1.c
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\x64\Debug\ViDu1.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\x64\Debug\ViDu1.exe
 C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\x64\Debug\ViDu1.pdb
+C:\Users\ADMIN\Documents\create-exam-questions\ViDu1\ViDu1\obj\x64\Debug\ViDu1.QuestionForm.resources

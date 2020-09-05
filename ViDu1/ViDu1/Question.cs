@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ViDu1
+{
+    class Question
+    {
+        private string content;
+        private string answerA;
+        private string answerB;
+        private string answerC;
+        private string answerD;
+        private AnswerEnum answer;
+
+        public enum AnswerEnum
+        {
+            A, B, C, D
+        }
+
+        public Question(string content, string A, string B, string C, string D, AnswerEnum answer)
+        {
+            if (answer == null)
+            {
+                throw new ArgumentNullException("Answer");
+            }
+
+            this.content = content;
+            this.A = answerA;
+            this.B = answerB;
+            this.C = answerC;
+            this.D = answerD;
+            this.answer = answer;
+        }
+
+        public string Content
+        {
+            set { this.content = value; }
+            get { return this.content; }
+        }
+
+        public string A
+        {
+            set { this.answerA = value; }
+            get { return this.answerA; }
+        }
+
+        public string B
+        {
+            set { this.answerB = value; }
+            get { return this.answerB; }
+        }
+
+        public string C
+        {
+            set { this.answerC = value; }
+            get { return this.answerC; }
+        }
+
+        public string D
+        {
+            set { this.answerD = value; }
+            get { return this.answerD; }
+        }
+
+        public AnswerEnum Answer
+        {
+            set { this.answer = value; }
+            get { return this.answer; }
+        }
+    }
+}
