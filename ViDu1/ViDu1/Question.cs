@@ -22,11 +22,6 @@ namespace ViDu1
 
         public Question(string content, string A, string B, string C, string D, AnswerEnum answer)
         {
-            if (answer == null)
-            {
-                throw new ArgumentNullException("Answer");
-            }
-
             this.content = content;
             this.A = answerA;
             this.B = answerB;
@@ -69,6 +64,14 @@ namespace ViDu1
         {
             set { this.answer = value; }
             get { return this.answer; }
+        }
+
+        public override string ToString()
+        {
+            return "Content: "
+                + content
+                + "Answer: "
+                + answer;
         }
     }
 }

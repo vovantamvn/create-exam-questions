@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ViDu1.DataAccess;
 
 namespace ViDu1
 {
@@ -16,6 +17,7 @@ namespace ViDu1
         public QuestionForm()
         {
             InitializeComponent();
+            loadSubject();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -91,5 +93,46 @@ namespace ViDu1
             txtContent.Text = "";
             cbAnswer.SelectedIndex = 0;
         }
-    }
+
+        private void loadSubject()
+        {
+            MonHocDao subjectDao = new MonHocDao();
+            DataTable table = subjectDao.LayDSMonHoc();
+
+            List<string> subjectNames = new List<string>();
+            List<string> subjectCodes = new List<string>();
+
+            cbSubject.Items.Clear();
+
+            foreach(DataRow row in table.Rows)
+            {
+                string name = row["TenMonHoc"].ToString();
+                string code = row["MaMonHoc"].ToString();
+
+                cbSubject.Items.Add(name);
+
+                subjectNames.Add(name);
+                subjectCodes.Add(code);
+            }
+        }
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            int numberOfExam = (int) txtNumberOfExam.Value;
+            int numberOfQuestion = (int)txtNumberOfQuestion.Value;
+
+            try
+            {
+                CreateExam createExam = new CreateExam(questions, numberOfExam, numberOfQuestion);
+                CreateDocument createDocument = new CreateDocument(createExam);
+
+                createDocument.excute();
+
+            } catch(Exception ex)
+            {
+                MessageBox.Show("Không hợp lệ!");
+            }
+            
+        }
+    } 
 }

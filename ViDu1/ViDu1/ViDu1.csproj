@@ -80,6 +80,8 @@
     <Compile Include="BusinessLogic\NhomCauHoiBlo.cs" />
     <Compile Include="BusinessObject\MonHocDto.cs" />
     <Compile Include="BusinessObject\NhomCauHoiDto.cs" />
+    <Compile Include="CreateDocument.cs" />
+    <Compile Include="CreateExam.cs" />
     <Compile Include="DataAccess\ConnectData.cs" />
     <Compile Include="DataAccess\KhoaDao.cs" />
     <Compile Include="DataAccess\MonHocDao.cs" />

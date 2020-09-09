@@ -97,7 +97,6 @@ namespace ViDu1
         {
             try
             {
-                Console.WriteLine("LOL");
                 BuildTreeView();
                 toolStrip1.ImageList = imageList1;
                 //Load dữ liệu Khoa, Môn học

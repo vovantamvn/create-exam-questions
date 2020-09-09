@@ -43,11 +43,14 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.lbDetail = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbSubject = new System.Windows.Forms.ComboBox();
             this.btnFinish = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.numberOfExam = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numberOfExam)).BeginInit();
+            this.txtNumberOfExam = new System.Windows.Forms.NumericUpDown();
+            this.txtNumberOfQuestion = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumberOfExam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumberOfQuestion)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -181,18 +184,13 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Môn học";
             // 
-            // comboBox1
+            // cbSubject
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D"});
-            this.comboBox1.Location = new System.Drawing.Point(147, 6);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(307, 21);
-            this.comboBox1.TabIndex = 16;
+            this.cbSubject.FormattingEnabled = true;
+            this.cbSubject.Location = new System.Drawing.Point(147, 6);
+            this.cbSubject.Name = "cbSubject";
+            this.cbSubject.Size = new System.Drawing.Size(307, 21);
+            this.cbSubject.TabIndex = 16;
             // 
             // btnFinish
             // 
@@ -202,6 +200,7 @@
             this.btnFinish.TabIndex = 17;
             this.btnFinish.Text = "Hoàn thành";
             this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // label8
             // 
@@ -212,32 +211,60 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Số đề:";
             // 
-            // numberOfExam
+            // txtNumberOfExam
             // 
-            this.numberOfExam.Location = new System.Drawing.Point(147, 383);
-            this.numberOfExam.Minimum = new decimal(new int[] {
+            this.txtNumberOfExam.Location = new System.Drawing.Point(147, 383);
+            this.txtNumberOfExam.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numberOfExam.Name = "numberOfExam";
-            this.numberOfExam.Size = new System.Drawing.Size(120, 20);
-            this.numberOfExam.TabIndex = 19;
-            this.numberOfExam.Value = new decimal(new int[] {
+            this.txtNumberOfExam.Name = "txtNumberOfExam";
+            this.txtNumberOfExam.Size = new System.Drawing.Size(120, 20);
+            this.txtNumberOfExam.TabIndex = 19;
+            this.txtNumberOfExam.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
+            // 
+            // txtNumberOfQuestion
+            // 
+            this.txtNumberOfQuestion.Location = new System.Drawing.Point(147, 414);
+            this.txtNumberOfQuestion.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtNumberOfQuestion.Name = "txtNumberOfQuestion";
+            this.txtNumberOfQuestion.Size = new System.Drawing.Size(120, 20);
+            this.txtNumberOfQuestion.TabIndex = 21;
+            this.txtNumberOfQuestion.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 416);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Số câu của đề:";
             // 
             // QuestionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.numberOfExam);
+            this.Controls.Add(this.txtNumberOfQuestion);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtNumberOfExam);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnFinish);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbSubject);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbDetail);
             this.Controls.Add(this.btnAdd);
@@ -255,7 +282,8 @@
             this.Controls.Add(this.label1);
             this.Name = "QuestionForm";
             this.Text = "QuestionForm";
-            ((System.ComponentModel.ISupportInitialize)(this.numberOfExam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumberOfExam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNumberOfQuestion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,9 +306,11 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lbDetail;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbSubject;
         private System.Windows.Forms.Button btnFinish;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.NumericUpDown numberOfExam;
+        private System.Windows.Forms.NumericUpDown txtNumberOfExam;
+        private System.Windows.Forms.NumericUpDown txtNumberOfQuestion;
+        private System.Windows.Forms.Label label9;
     }
 }
