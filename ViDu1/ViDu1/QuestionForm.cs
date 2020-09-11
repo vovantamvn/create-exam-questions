@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using ViDu1.DataAccess;
+using ViDu1.MutipleChoiceExam;
 
 namespace ViDu1
 {
@@ -17,81 +13,6 @@ namespace ViDu1
         public QuestionForm()
         {
             InitializeComponent();
-            loadSubject();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            if (isQuestionValid())
-            {
-                Question question = getQuestionInForm();
-                questions.Add(question);
-
-                cleanForm();
-                lbDetail.Text = string.Format("Số câu hỏi: " + questions.Count);
-            }
-            else
-            {
-                MessageBox.Show("Phải điền hết các thuộc tính!");
-            }
-        }
-
-        private Question getQuestionInForm()
-        {
-            string A = txtA.Text;
-            string B = txtB.Text;
-            string C = txtC.Text;
-            string D = txtD.Text;
-            string content = txtContent.Text;
-            Question.AnswerEnum answer = (Question.AnswerEnum)cbAnswer.SelectedIndex;
-
-            return new Question(content, A, B, C, D, answer);
-        }
-
-        private bool isQuestionValid()
-        {
-            if (String.IsNullOrWhiteSpace(txtContent.Text))
-            {
-                return false;
-            }
-
-            if(String.IsNullOrWhiteSpace(txtA.Text))
-            {
-                return false;
-            }
-
-            if(String.IsNullOrWhiteSpace(txtB.Text))
-            {
-                return false;
-            }
-
-            if(String.IsNullOrWhiteSpace(txtC.Text))
-            {
-                return false;
-            }
-
-            if(String.IsNullOrWhiteSpace(txtD.Text))
-            {
-                return false;
-            }
-
-
-            if(cbAnswer.SelectedItem == null)
-            {
-                return false;
-            }
-            
-            return true;
-        }
-
-        private void cleanForm()
-        {
-            txtA.Text = "";
-            txtB.Text = "";
-            txtC.Text = "";
-            txtD.Text = "";
-            txtContent.Text = "";
-            cbAnswer.SelectedIndex = 0;
         }
 
         private void loadSubject()
@@ -123,8 +44,8 @@ namespace ViDu1
 
             try
             {
-                CreateExam createExam = new CreateExam(questions, numberOfExam, numberOfQuestion);
-                CreateDocument createDocument = new CreateDocument(createExam);
+                CreateExamFormQuestions createExam = new CreateExamFormQuestions(questions, numberOfExam, numberOfQuestion);
+                CreateDocumentFormExam createDocument = new CreateDocumentFormExam(createExam);
 
                 createDocument.excute();
 
@@ -133,6 +54,30 @@ namespace ViDu1
                 MessageBox.Show("Không hợp lệ!");
             }
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.DefaultExt = ".docx";
+            openFileDialog.Filter = "Word documents (.docx)|*.docx";
+
+            DialogResult result = openFileDialog.ShowDialog();
+            if(result == DialogResult.OK)
+            {
+                String fileName = openFileDialog.FileName;
+                Console.WriteLine("File: " + fileName);
+
+                ReadQuestionFormFile readQuestionFormFile = new ReadQuestionFormFile(fileName);
+                questions = readQuestionFormFile.excute();
+
+                lbDetail.Text = "Số câu hỏi: " + questions.Count;
+            }
+        }
+
+        private void QuestionForm_Load(object sender, EventArgs e)
+        {
+            loadSubject();
         }
     } 
 }

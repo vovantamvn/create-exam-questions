@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ViDu1
@@ -16,8 +13,9 @@ namespace ViDu1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new QuestionForm());
+            Application.Run(new QuestionForm());
 
+            /*
             fLogin frm = new fLogin();
             fMain MAIN = new fMain();
             Application.Run(frm);
@@ -29,6 +27,7 @@ namespace ViDu1
             {
                 MAIN.Close();
             }
+            */
         }
     }
 }
