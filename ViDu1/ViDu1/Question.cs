@@ -17,16 +17,16 @@ namespace ViDu1
 
         public enum AnswerEnum
         {
-            A, B, C, D
+            A, B, C, D, None
         }
 
         public Question(string content, string A, string B, string C, string D, AnswerEnum answer)
         {
-            this.content = content;
-            this.A = answerA;
-            this.B = answerB;
-            this.C = answerC;
-            this.D = answerD;
+            this.content = content.Trim();
+            this.answerA = A.Trim();
+            this.answerB = B.Trim();
+            this.answerC = C.Trim();
+            this.answerD = D.Trim();
             this.answer = answer;
         }
 
@@ -68,10 +68,17 @@ namespace ViDu1
 
         public override string ToString()
         {
-            return "Content: "
+            return "[Content: "
                 + content
-                + "Answer: "
-                + answer;
+                + ", A: "
+                + answerA
+                + ", B: "
+                + answerB
+                + ", C: "
+                + answerC
+                + ", D: "
+                + answerD
+                + "]";
         }
     }
 }

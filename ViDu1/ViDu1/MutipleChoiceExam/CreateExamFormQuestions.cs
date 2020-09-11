@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ViDu1
+namespace ViDu1.MutipleChoiceExam
 {
-    class CreateExam
+    class CreateExamFormQuestions
     {
         private readonly List<Question> questions;
         private readonly int numberOfExam;
         private readonly int numberOfQuestion;
         private readonly Random random = new Random(DateTime.Now.Second);
 
-        public CreateExam(List<Question> questions, int numberOfExam, int numberOfQuestion)
+        public CreateExamFormQuestions(List<Question> questions, int numberOfExam, int numberOfQuestion)
         {
             if (numberOfExam <= 0)
                 throw new ArgumentException("numberOfExam must be great than 0!");
@@ -33,7 +33,7 @@ namespace ViDu1
         {
             Dictionary<Int32, HashSet<Question>> keyValues = new Dictionary<Int32, HashSet<Question>>();
 
-            for(int i=1; i<= numberOfExam; i++)
+            for (int i = 1; i <= numberOfExam; i++)
             {
                 keyValues.Add(i, randomQuestion());
             }
@@ -47,13 +47,14 @@ namespace ViDu1
             HashSet<Question> questions = new HashSet<Question>();
             int max = this.questions.Count;
 
-            while(questions.Count <= this.numberOfQuestion)
+            while (questions.Count < this.numberOfQuestion)
             {
                 int index = random.Next(0, max);
                 questions.Add(this.questions[index]);
             }
-            
+
             return questions;
         }
     }
+
 }
