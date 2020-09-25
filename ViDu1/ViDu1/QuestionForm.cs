@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Windows.Forms;
 using ViDu1.DataAccess;
 using ViDu1.MutipleChoiceExam;
@@ -46,12 +47,14 @@ namespace ViDu1
             {
                 CreateExamFormQuestions createExam = new CreateExamFormQuestions(questions, numberOfExam, numberOfQuestion);
                 CreateDocumentFormExam createDocument = new CreateDocumentFormExam(createExam);
+                
+                createDocument.excute(@"C:\Users\ADMIN\Documents\Test\DeThiMau3.docx", "HỌC KÌ 2", "LỊCH SỬ", "HỌC SINH","TRẮC NGHIỆM", "120", "25-09-2020", "01");
 
-                createDocument.excute();
-
-            } catch(Exception ex)
+            } 
+            catch(Exception ex)
             {
-                MessageBox.Show("Không hợp lệ!");
+                Debug.WriteLine(ex);
+                MessageBox.Show("Không thể tạo đề thi!");
             }
             
         }
@@ -68,8 +71,8 @@ namespace ViDu1
                 String fileName = openFileDialog.FileName;
                 Console.WriteLine("File: " + fileName);
 
-                ReadQuestionFormFile readQuestionFormFile = new ReadQuestionFormFile(fileName);
-                questions = readQuestionFormFile.excute();
+                // Doc toan bo danh sach cau hoi
+                this.questions = ReadQuestionFormFile.readAllQuestion(fileName);
 
                 lbDetail.Text = "Số câu hỏi: " + questions.Count;
             }

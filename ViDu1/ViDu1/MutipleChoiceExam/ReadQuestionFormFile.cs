@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Word;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,23 +10,13 @@ namespace ViDu1.MutipleChoiceExam
 {
     class ReadQuestionFormFile
     {
-        private readonly String fileName;
-
-        public ReadQuestionFormFile(String fileName)
-        {
-            if (String.IsNullOrEmpty(fileName))
-                throw new ArgumentNullException();
-
-            this.fileName = fileName;
-        }
-
-        public List<Question> excute()
+        
+        public static List<Question> readAllQuestion(string filePath)
         {
             List<Question> questions = new List<Question>();
-            Microsoft.Office.Interop.Word.Application AC = new Microsoft.Office.Interop.Word.Application();
-            Microsoft.Office.Interop.Word.Document doc = new Microsoft.Office.Interop.Word.Document();
 
-            doc = AC.Documents.Open(fileName, null, null, null);
+            Application wordApp = new Application();
+            Document doc = wordApp.Documents.Open(filePath);
 
             string[] lines = doc.Content.Text.Split('\r');
             int max = lines.Length;
@@ -36,7 +27,7 @@ namespace ViDu1.MutipleChoiceExam
             {
                 if (pattern.IsMatch(lines[i]))
                 {
-                    string content = lines[i];
+                    string content = Regex.Replace(lines[i], "^<Câu [0-9]+>", "");
                     string a = lines[i + 1].Replace("A. ", "");
                     string b = lines[i + 2].Replace("B. ", "");
                     string c = lines[i + 3].Replace("C. ", "");
@@ -51,6 +42,9 @@ namespace ViDu1.MutipleChoiceExam
                     i++;
                 }
             }
+
+            doc.Close();
+            wordApp.Quit();
 
             return questions;
         }
