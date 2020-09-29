@@ -69,6 +69,31 @@ namespace ViDu1.MutipleChoiceExam
 
                     Paragraph paragraph = doc.Paragraphs.Add();
                     paragraph.Range.Text = stringBuilder.ToString();
+
+                    // Đoạn code bổ sung
+                    // totalQuestion chính là tổng số câu hỏi, bạn có thể truyền nó vào phương thức excute ở trên
+                    
+                    int totalQuestion = 25;
+                    int row = (totalQuestion%10 == 0)? (totalQuestion / 10) : (totalQuestion / 10) + 1;
+
+                    Range range = doc.Paragraphs.Add().Range;
+                    Table table = doc.Tables.Add(range, row, 10);
+                    table.Borders.InsideLineStyle = WdLineStyle.wdLineStyleSingle;
+                    table.Borders.OutsideLineStyle = WdLineStyle.wdLineStyleSingle;
+
+                    int number = 1;
+                    
+                    for(int i=1; i <= 10; i++)
+                    {
+                        for(int j=1; j <= row; j++)
+                        {
+                            Cell cell = table.Cell(j, i);
+                            cell.Range.Text = number.ToString();
+                            number++;
+                        }
+                    }
+
+                    // Kết thúc đoạn code
                 }
                 catch(Exception e)
                 {
