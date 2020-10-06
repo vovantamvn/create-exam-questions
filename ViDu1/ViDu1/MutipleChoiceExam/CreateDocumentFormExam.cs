@@ -44,12 +44,12 @@ namespace ViDu1.MutipleChoiceExam
                 // Hien thi duong dan
                 Console.WriteLine(fileName);
 
-                HashSet<Question> value = keyValues[key];
+                HashSet<Question> questions = keyValues[key];
                 StringBuilder stringBuilder = new StringBuilder();
 
-                for(int i=0; i<value.Count; i++)
+                for(int i=0; i<questions.Count; i++)
                 {
-                    Question q = value.ElementAt(i);
+                    Question q = questions.ElementAt(i);
                     stringBuilder.AppendLine("Câu " + (i + 1) + ": " + q.Content);
                     stringBuilder.AppendLine("A. " + q.A);
                     stringBuilder.AppendLine("B. " + q.B);
@@ -72,8 +72,8 @@ namespace ViDu1.MutipleChoiceExam
 
                     // Đoạn code bổ sung
                     // totalQuestion chính là tổng số câu hỏi, bạn có thể truyền nó vào phương thức excute ở trên
-                    
-                    int totalQuestion = 25;
+
+                    int totalQuestion = questions.Count;
                     int row = (totalQuestion%10 == 0)? (totalQuestion / 10) : (totalQuestion / 10) + 1;
 
                     Range range = doc.Paragraphs.Add().Range;
@@ -82,14 +82,17 @@ namespace ViDu1.MutipleChoiceExam
                     table.Borders.OutsideLineStyle = WdLineStyle.wdLineStyleSingle;
 
                     int number = 1;
-                    
-                    for(int i=1; i <= 10; i++)
+
+                    for (int j = 1; j <= row; j++)
                     {
-                        for(int j=1; j <= row; j++)
+                        for (int i = 1; i <= 10; i++)
                         {
-                            Cell cell = table.Cell(j, i);
-                            cell.Range.Text = number.ToString();
-                            number++;
+                            if (number <= questions.Count)
+                            {
+                                Cell cell = table.Cell(j, i);
+                                cell.Range.Text = number.ToString() + "-" + questions.ElementAt(number - 1).Answer.ToString();
+                                number++;
+                            }
                         }
                     }
 

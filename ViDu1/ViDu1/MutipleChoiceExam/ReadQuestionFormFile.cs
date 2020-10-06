@@ -33,7 +33,7 @@ namespace ViDu1.MutipleChoiceExam
                     string c = lines[i + 3].Replace("C. ", "");
                     string d = lines[i + 4].Replace("D. ", "");
 
-                    Question question = new Question(content, a, b, c, d, Question.AnswerEnum.None);
+                    Question question = new Question(content, a, b, c, d, Question.AnswerEnum.A);
                     questions.Add(question);
                     i = i + 5;
                 }
