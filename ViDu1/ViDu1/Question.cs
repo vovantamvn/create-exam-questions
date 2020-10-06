@@ -13,14 +13,9 @@ namespace ViDu1
         private string answerB;
         private string answerC;
         private string answerD;
-        private AnswerEnum answer;
+        private string answer;
 
-        public enum AnswerEnum
-        {
-            A, B, C, D, None
-        }
-
-        public Question(string content, string A, string B, string C, string D, AnswerEnum answer)
+        public Question(string content, string A, string B, string C, string D, string answer)
         {
             this.content = content.Trim();
             this.answerA = A.Trim();
@@ -60,7 +55,7 @@ namespace ViDu1
             get { return this.answerD; }
         }
 
-        public AnswerEnum Answer
+        public string Answer
         {
             set { this.answer = value; }
             get { return this.answer; }

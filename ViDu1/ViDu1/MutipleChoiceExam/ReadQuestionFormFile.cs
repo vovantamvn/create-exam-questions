@@ -18,32 +18,47 @@ namespace ViDu1.MutipleChoiceExam
             Application wordApp = new Application();
             Document doc = wordApp.Documents.Open(filePath);
 
-            string[] lines = doc.Content.Text.Split('\r');
-            int max = lines.Length;
-            int i = 0;
-            Regex pattern = new Regex("^<Câu [0-9]+>"); 
+            int length = doc.Paragraphs.Count;
+            Regex pattern = new Regex("^<Câu [0-9]+>");
 
-            while(i<max)
+            for (int i=1; i<length; i++)
             {
-                if (pattern.IsMatch(lines[i]))
-                {
-                    string content = Regex.Replace(lines[i], "^<Câu [0-9]+>", "");
-                    string a = lines[i + 1].Replace("A. ", "");
-                    string b = lines[i + 2].Replace("B. ", "");
-                    string c = lines[i + 3].Replace("C. ", "");
-                    string d = lines[i + 4].Replace("D. ", "");
+                Paragraph paragraph = doc.Paragraphs[i];
+                Range range = paragraph.Range;
 
-                    Question question = new Question(content, a, b, c, d, Question.AnswerEnum.A);
-                    questions.Add(question);
-                    i = i + 5;
-                }
-                else
+                // Check text
+                string text = range.Text;
+
+                if(pattern.IsMatch(text))
                 {
-                    i++;
-                }
+                    string content = Regex.Replace(text, "^<Câu [0-9]+>", "");
+                    string a = doc.Paragraphs[i + 1].Range.Text.Replace("A. ", "");
+                    string b = doc.Paragraphs[i + 2].Range.Text.Replace("B. ", "");
+                    string c = doc.Paragraphs[i + 3].Range.Text.Replace("C. ", "");
+                    string d = doc.Paragraphs[i + 4].Range.Text.Replace("D. ", "");
+
+                    string answer = "";
+                    for(int j = 1; j <= 4; j++)
+                    {
+                        Range startRange = doc.Paragraphs[i + j].Range;
+                        Range underLineRange = doc.Range(startRange.Start, startRange.Start + 1);
+                        if (underLineRange.Underline == WdUnderline.wdUnderlineSingle)
+                        {
+                            answer = underLineRange.Text;
+                            break;
+                        }
+                    }
+
+                    if (!String.IsNullOrWhiteSpace(answer))
+                    {
+                        questions.Add(new Question(content, a, b, c, d, answer));
+                    }
+
+                    i += 3;
+                }   
             }
 
-            doc.Close();
+            doc.Close(false);
             wordApp.Quit();
 
             return questions;

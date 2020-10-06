@@ -90,7 +90,7 @@ namespace ViDu1.MutipleChoiceExam
                             if (number <= questions.Count)
                             {
                                 Cell cell = table.Cell(j, i);
-                                cell.Range.Text = number.ToString() + "-" + questions.ElementAt(number - 1).Answer.ToString();
+                                cell.Range.Text = number.ToString() + "-" + questions.ElementAt(number - 1).Answer;
                                 number++;
                             }
                         }
